@@ -1,0 +1,301 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+.animate__animated.animate__bounce {
+	--animate-duration: 3s;
+  }
+  
+
+  :root {
+	--animate-duration: 800ms;
+	.my-element {
+		--animate-repeat: 2;
+	  }
+	--animate-delay: 1s;
+  }
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+.header
+{
+	background-color: rgb(2, 148, 245);
+}
+
+.container
+{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.up
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.offer
+{
+	width: 700px;
+}
+
+.offer_title
+{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.offer_title-span
+{
+	text-transform: uppercase;
+	font-size: 48px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.offer_text
+{
+	font-size: 16px;
+}
+
+.offer_btn
+{
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: rgb(255, 208, 0);
+	font: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition-timing-function: ease-in;
+	div {
+		transition-delay: 1s;
+	  }
+}
+
+.img1
+{
+	width: 400px;
+}
+
+.first_section
+{
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.need
+{
+	font-size: 30px;
+	font: 700;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.first_section_blocks
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.first_section_block
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.first_section_text
+{
+	color: black;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+}
+
+.first_section_par
+{
+	color: rgb(190, 184, 184);
+	text-align: center;
+}
+
+.second_section
+{
+	background-color: rgb(236, 236, 236);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.second_section_form
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.formform
+{
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 200px;
+}
+
+.second_section_btn
+{
+	display: block;
+	width: 370px;
+	height: 55px;
+	background-color: rgb(255,204,0);
+	font: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition-timing-function: easy;
+	div {
+		transition-delay: 3s;
+	  }
+}
+
+.third_section
+{
+	
+	background-color: rgb(0, 110, 255);
+
+}
+
+.third_section_protected
+{
+	color: white;
+	text-align: center;
+}
+
+.animate 
+
+{ 
+	width: 250px; 
+	border-radius: 10px; 
+	margin: 30px auto; 
+	background-color: brown; 
+	text-align: center; 
+	line-height: 60px; 
+	padding: 0px 30px; 
+	font-size: 20px; 
+	font-weight: bold; 
+	box-shadow: 0 7px 10px rgb(184, 94, 94); 
+	position: relative; 
+} 
+
+.animate:hover
+{ 
+	background: rgb(214, 124, 20); 
+	box-shadow: 0 4px 10px rgb(184, 94, 94); 
+	top: 3px; 
+} 
+
+@media (min-width: 1200px) 
+{
+    .offer_title { font-size: 48px; }
+    .offer_text { font-size: 20px; }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) 
+{
+    .offer_title { font-size: 36px; }
+    .offer_text { font-size: 18px; }
+    .first_section_block img { width: 50px; }
+    .offer_btn { padding: 8px 16px; }
+}
+
+@media (max-width: 991px) and (min-width: 768px) 
+{
+    .offer_title { font-size: 28px; }
+    .offer_text { font-size: 16px; }
+    .first_section_block { width: 100%; text-align: center; }
+    .first_section_par { font-size: 14px; }
+    .formform { width: 100%; }
+    .offer_btn { padding: 12px 24px; }
+}
+
+#buton {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(240, 241, 145);
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid rgb(156, 124, 243);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+#buton:hover
+{
+    cursor: pointer;
+}
+
+.JSform
+{
+    padding: 10px;
+}
+
+.JSformOut
+{
+    padding: 10px;
+}
+
+#form
+{
+    width: 100%;
+    margin: auto;
+}
+
+.row
+{
+    margin: 10px 10px;
+}
+
+.ZeroSection
+{
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding: 10px;
+}
+
+input:invalid:required
+{
+	border: 2px solid black;
+}

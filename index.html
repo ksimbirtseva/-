@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <img src="img/logo.png" alt="logo">
+        <div class="up">
+            <div class="offer">
+                <h1 class="offer_title">С помощью нас Вы сможете создать то, о чем</h1>
+                <span class="offer_title-span">желаете!</span>
+                <p class="offer_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis doloribus dolores</p>
+                 <a class="offer_btn" href="#">Узнать больше...</a>
+            </div>
+            <img class="img1" src="img/header-img.png" alt="phone">
+        </div>
+      </div>  
+    </header>
+
+    <section class="ZeroSection">
+        <form id="form" action="#">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 JSform">
+                        <h4>Форма заказа услуги</h4>
+                        <div class="row">
+                            <div class="col-md-4">Имя:</div>
+                            <div class="col-md-4"><input class="form-control" id="name" type="text" onchange="checkName();" required /> </div>
+                            <div class="col-md-4"><span id="check_name"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">Номер телефона:</div>
+                            <div class="col-md-4"><input class="form-control" id="numberphone" type="text" onblur="checkNumber();" placeholder="xxx-xxx-xxx" required /></div>
+                            <div class="col-md-4"><span id="check_phone"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">Адрес:</div>
+                            <div class="col-md-4"><input class="form-control" id="adres" type="text" onblur="checkAdres();" required /></div>
+                            <div class="col-md-4"><span id="adres_check"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">Дата:</div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="date" type="date" required />
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">Метод оплаты:</div>
+                            <div class="col-md-4">
+                                <select class="form-control" name="paymethod" id="paymethod" required>
+                                    <option>Наличные</option>
+                                    <option>Карта</option>
+                                    <option>Bitcoin</option>
+                                    <option>СБП</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 order"><span id="buton" onclick="outputData();">Отправить</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 JSformOut">
+                        <div class="col-md-12">
+                            <h4>Форма для вывода</h4>
+                            <span id="summary"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form> 
+    </section>
+
+    <section class="first_section">
+        <div class="container">
+            <p class="need"> Что Вам необходимо?</p>
+            <div class="first_section_blocks">
+                <div class="first_section_block">
+                    <img src="img/f3.png" alt="pencil">
+                    <div class="first_section_text"> Первый блок </div>
+                    <p class="first_section_par"> Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+                <div class="first_section_block">
+                    <img src="img/f4.png" alt="ball">
+                    <div class="first_section_text"> Второй блок </div>
+                    <p class="first_section_par"> Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+                <div class="first_section_block">
+                    <img src="img/f5.png" alt="flag">
+                    <div class="first_section_text"> Третий блок </div>
+                    <p class="first_section_par"> Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second_section">
+        <div class="container">
+            <p class="need"> Форма заказа обратного звонка</p>
+            <div class="second_section_form">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input class="formform" type="text" placeholder="Имя"> <br>
+                    <input class="formform" type="text" placeholder="Введите свой E-mail"> <br>
+                    <input class="formform" type="tel" placeholder="Телефон"> <br>
+                    <input class="formform" type="text" placeholder="Какая тема Вас интересует?"> <br>
+                </form>
+                <a class="second_section_btn" href="#">Отправить запрос!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="third_section">
+        <div class="container">
+            <p class="third_section_protected"> ©️ Все на этом сайте защищено</p>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
